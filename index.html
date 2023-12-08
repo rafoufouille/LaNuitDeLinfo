@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<header>
+	</header>
+
+	<main id="mein">
+		<div>
+			<div>
+				<h1>Qu'est ce que l'écologie ?</h1>
+				<h2>Choisissez la bonne réponse</h2>
+			</div>
+			<div class="reponses" id="r1">
+				<div id="v" onclick="afficher('artcl1'); vrai('v')">
+					<p>Une science qui étudie les interactions des êtres vivants entre eux et avec leur milieu</p>
+				</div>
+				<div id="f1" onclick="faux('f1')">
+					<p>L'étude comparative et explicative de l'ensemble des caractères culturels</p>
+				</div>
+				<div id="f2" onclick="faux('f2')">
+					<p>Une discipline, située à l'articulation entre les différentes sciences humaines et naturelles, qui étudie
+						l'être humain et les groupes humains sous tous leurs aspects</p>
+				</div>
+			</div>
+		</div>
+
+		<article id="artcl1">
+			<div id="flexDiv">
+				<div>
+					<p>Energies renouvelables</p>
+					<button onclick="montrerCacher1()">En savoir plus :</button>
+				</div>
+				<div>
+					<p>Energies fossibles</p>
+					<button onclick="montrerCacher2()">En savoir plus :</button>
+				</div>
+			</div>
+
+			<div id="texteAfficher1">
+				<div class="artcl">
+					<h2> Énergie Solaire </h2>
+					<div>
+						<div>
+							<p>L'énergie solaire est produite en capturant la lumière et la chaleur du soleil à l'aide de
+								technologies telles que les panneaux solaires photovoltaïques (qui convertissent la lumière du soleil en
+								électricité) et les panneaux solaires thermiques (qui capturent la chaleur du soleil pour des
+								applications comme le chauffage de l'eau).</p>
+						</div>
+						<p><img alt="image" class="imageIA" src="./images/panneau-solaire.png">
+						</p>
+					</div>
+				</div>
+
+				<div class="artcl">
+					<h2> Énergie Éolienne </h2>
+					<div>
+						<div>
+							<p>L'énergie éolienne est générée en utilisant la force du vent pour faire tourner des
+								éoliennes. Ces éoliennes convertissent l'énergie cinétique du vent en électricité. L'énergie éolienne
+								est de plus en plus utilisée dans le monde entier, que ce soit sous forme de parcs éoliens terrestres ou
+								de parcs éoliens offshore en mer.</p>
+						</div>
+						<p><img alt="image" class="imageIA" src="./images/energie-eolienne.png">
+						</p>
+					</div>
+				</div>
+
+
+				<div class=artcl>
+					<h2> Énergie Hydraulique (Hydroélectricité) </h2>
+					<div>
+						<div>
+							<p>L'énergie hydraulique est produite en exploitant l'énergie cinétique de l'eau en mouvement,
+								généralement à partir de rivières ou de chutes d'eau. Les centrales hydroélectriques utilisent des
+								turbines pour convertir l'énergie de l'eau en électricité. Il existe également des technologies
+								émergentes, comme les marées et les courants océaniques, qui exploitent l'énergie des mouvements de
+								l'eau dans les océans.</p>
+						</div>
+						<p><img alt="image" class="imageIA" src="./images/hydro.png">
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="texteAfficher2">
+				<article class="artikl" onmouseenter="afficherHover('charbon')" onmouseleave="stopperHover('charbon')">
+					<div class="charbontitre">
+						<h2 id="titreEnergF">
+							Le charbon
+						</h2>
+						<img class="charbonimg" src="./images/charbon.png" alt="charbon">
+					</div>
+				</article>
+
+				<article class="artikl" onmouseenter="afficherHover('petrolegaz')" onmouseleave="stopperHover('petrolegaz')">
+					<div class="petrolegaztitre">
+						<h2 class="titreEnergF">
+							Le pétrole et le gaz
+						</h2>
+						<img class="petrolegazimg" src="./images/baril-de-petrole.png" alt="petrolegaz">
+					</div>
+				</article>
+		</div>
+
+		<div id="deuxiemeAffichage">
+			<div id="charbon">
+				<p>
+					L’enfouissement rapide d'arbres et de débris végétaux au sein de certains bassins sédimentaires
+					provoque la lente et progressive formation du charbon, avec des passages successifs par la
+					tourbe,
+					le
+					lignite, la houille et enfin l’anthracite, qui est du carbone presque pur.
+					La plupart des charbons exploitables se sont formés au Carbonifère (il y a 360 à 300 millions
+					d'années) ou plus récemment, à l'ère Tertiaire.
+					Exploité depuis des siècles, le charbon est extrait dans des mines sous terre ou à ciel ouvert.
+					Il est l’un des facteurs ayant contribué à la première révolution industrielle durant le XIXe
+					siècle.
+				</p>
+			</div>
+			<div id="petrolegaz">
+				<p>
+					La genèse des hydrocarbures est un processus qui s’étend aussi sur des millions d’années.
+					Elle débute par l'accumulation de matière organique dans les sédiments de milieux peu oxygénés
+					et
+					calmes, comme le fond de mers fermées ou de lacs.
+					Sous l'action de bactéries, elles se transforment en boues puis, sous l'effet de l'enfouissement
+					progressif, en « roches-mères ».
+					Les hydrocarbures (pétrole et gaz) s’y forment puis entament une migration vers la surface pour
+					se
+					concentrer, si les conditions s’y prêtent, dans des « roches-réservoirs », dans des volumes
+					fermés
+					(pièges) constituant des gisements.
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<a href="page2.html">
+			<button class="midButton">Comment les énergies fossiles arrivent jusqu'à nous ?</button>
+		</a>
+	</footer>
+</body>
+
+</html>

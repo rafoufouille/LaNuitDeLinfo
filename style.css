@@ -1,0 +1,263 @@
+@font-face {
+	font-family: Fashion Fetish;
+	src: url(fonts/Fashion\ Fetish\ Regular.ttf);
+}
+
+@font-face {
+	font-family: Fors;
+	src: url(fonts/TT\ Fors\ Trial\ Regular.ttf);
+}
+
+html {
+	height: 100%;
+	width: 95%;
+	margin: auto;
+	background-color: #2F3E46;
+}
+
+body {
+	background-color: #385357;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+p {
+	font-family: "Fors";
+}
+
+/* index */
+
+/* Qu'est-ce que l'écologie ? */
+
+h1,
+h2 {
+	text-align: center;
+	color: #D5DCD1;
+	font-family: "Fashion Fetish";
+}
+
+.reponses {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.reponses {
+	color: #D5DCD1;
+}
+
+.reponses:hover {
+	cursor: pointer;
+}
+
+.reponses>div {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Premier affichage */
+#artcl1 {
+	display: none;
+}
+
+#flexDiv {
+	display: flex;
+	justify-content: space-evenly;
+	color: #F3F6F3;
+}
+
+#flexDiv>div {
+	display: flex;
+	flex-direction: column;
+	background-color: #42615A;
+	padding: 30px;
+}
+
+#flexArtcl button {
+	height: 25px;
+}
+
+#texteAfficher1 {
+	display: none;
+}
+
+#texteAfficher2 {
+	display: none;
+}
+
+footer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	padding-top: 400px;
+}
+
+.midButton {
+	height: 40px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/* rajoutés */
+.artcl {
+	margin-top: 10px;
+	width: 70%;
+	margin-left: 20px;
+	margin-bottom: 50px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 2px #2F3E46;
+	background-color: #42615A;
+	color: #D5DCD1;
+	margin: auto;
+}
+
+.ImageIA {
+	height: 250px;
+	width: 300px;
+	border-radius: 25% 10%;
+	display: flex;
+	margin-right: 1px;
+	margin-bottom: 50px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	margin-left: 20px;
+	margin-top: 30px;
+}
+
+.artikl {
+	padding-top: 25px;
+	margin: auto;
+}
+
+.charbontitre,
+.petrolegaztitre {
+	text-align: center;
+	margin-bottom: 15px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: #42615A;
+	padding: 20px;
+	border-radius: 5px 10px 5px 10px;
+	height: 200px;
+	width: 300px;
+}
+
+.titreEnergF {
+	margin-bottom: 10px;
+}
+
+.charbonimg,
+.petrolegazimg {
+	display: block;
+	margin: 0 auto;
+	height: 100px;
+	width: 100px;
+}
+
+#charbon,
+#petrolegaz {
+	display: none;
+}
+
+#charbon p,
+#petrolegaz p {
+	position: absolute;
+	left: 40%;
+	height: 305px;
+	width: 350px;
+	text-align: center;
+	background-color: #42615A;
+	color: #F3F6F3;
+	border-radius: 5px;
+	padding: 15px;
+	padding-bottom: 35px;
+}
+
+/*
+.charbon p {
+  position: absolute;
+  top: 260px;
+  left: 510px;
+}
+
+.petrolegaz p {
+  position: absolute;
+  top: 260px;
+  right: 500px;
+}
+
+.charbontitre:hover+.charbon p {
+	display: block;
+}
+
+.petrolegaztitre:hover+.petrolegaz p {
+	display: block;
+}
+
+*/
+
+#deuxiemeAffichage {
+	margin: auto;
+	width: 500px;
+	text-align: center;
+
+}
+
+/* Page 2 */
+.artclP2 {
+	padding: 15px;
+	background-color: #5B867B;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+#art1,
+#art2,
+#art3,
+#art4 {
+	display: none;
+}
+
+.img2 {
+	height: 100%;
+	width: auto;
+}
+
+/* Page 3 */
+
+#feu {
+	border: 2px solid black;
+	margin: auto;
+	width: 600px;
+	height: 400px;
+  background-color: #5B867B;
+}
+
+#imgFeu {
+	width: 100%;
+}
+
+#txtFeu {
+	display: none;
+  text-align: center;
+  margin-top: 30%;
+  
+}
+
+#feu:hover #imgFeu {
+	display: none;
+}
+
+#feu:hover #txtFeu {
+	display: block;
+}
+
+@media(max-width: 768px) {
+	#texteAfficher2 {
+		flex-direction: column;
+	}
+}
